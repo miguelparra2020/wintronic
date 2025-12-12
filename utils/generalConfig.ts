@@ -13,7 +13,7 @@ export const ModuelesActives = {
 }
 
 export const company = {
-  name: "Minoxidil Kirkland España",
+  name: "La feria del aseo",
   principalColorTitles: "blue",
   principalColorParrafos: "slate",
   principalColorButtonsBg: "blue",
