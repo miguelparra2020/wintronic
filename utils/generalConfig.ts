@@ -13,7 +13,7 @@ export const ModuelesActives = {
 }
 
 export const company = {
-  name: "La feria del aseo",
+  name: "Mile puntadas",
   principalColorTitles: "blue",
   principalColorParrafos: "slate",
   principalColorButtonsBg: "blue",
