@@ -5,9 +5,9 @@ import type { ManifestOptions } from "vite-plugin-pwa"
  * Defines the default SEO configuration for the website.
  */
 export const seoConfig = {
-	baseURL: "https://thehouseexclusive.com", // Change this to your production URL.
+	baseURL: "https://wintronic.com", // Change this to your production URL.
 	description:
-		"The House Exclusive es una tienda de moda premium especializada en prendas de alta calidad con diseños únicos y exclusivos. Ofrecemos piezas personalizables que reflejan tu estilo y elevan tu identidad con elegancia y autenticidad.", // Change this to be your website's description.
+		"Wintronic es una empresa dedicada a la impresión 3D y al diseño personalizado, donde transformamos ideas en piezas únicas y funcionales. Creamos soluciones a medida con tecnología de alta precisión, enfocadas en calidad, innovación y detalle para cada proyecto.",
 	type: "website",
 	image: {
 		url: "https://picsum.photos/1200/630", // Change this to your website's thumbnail.
@@ -15,9 +15,9 @@ export const seoConfig = {
 		width: 1200,
 		height: 630
 	},
-	siteName: "The House Exclusive", // Change this to your website's name,
+	siteName: "Wintronic", // Change this to your website's name,
 	twitter: {
-		card: "The House Exclusive es una tienda de moda premium especializada en prendas de alta calidad con diseños únicos y exclusivos. Ofrecemos piezas personalizables que reflejan tu estilo y elevan tu identidad con elegancia y autenticidad."
+		card: "Wintronic es una empresa dedicada a la impresión 3D y al diseño personalizado, donde transformamos ideas en piezas únicas y funcionales. Creamos soluciones a medida con tecnología de alta precisión, enfocadas en calidad, innovación y detalle para cada proyecto."
 	}
 }
 
@@ -25,10 +25,10 @@ export const seoConfig = {
  * Defines the configuration for PWA webmanifest.
  */
 export const manifest: Partial<ManifestOptions> = {
-	name: "The House Exclusive", // Change this to your website's name.
-	short_name: "The House Exclusive", // Change this to your website's short name.
+	name: "Wintronic", // Change this to your website's name.
+	short_name: "Wintronic", // Change this to your website's short name.
 	description:
-		"The House Exclusive es una tienda de moda premium especializada en prendas de alta calidad con diseños únicos y exclusivos. Ofrecemos piezas personalizables que reflejan tu estilo y elevan tu identidad con elegancia y autenticidad.", // Change this to be your website's description.
+		"Wintronic es una empresa dedicada a la impresión 3D y al diseño personalizado, donde transformamos ideas en piezas únicas y funcionales. Creamos soluciones a medida con tecnología de alta precisión, enfocadas en calidad, innovación y detalle para cada proyecto.", // Change this to be your website's description.
 	 // Change this to your websites description.
 	theme_color: "#ffffffff", // Change this to your primary color.
 	background_color: "#ffffff", // Change this to your background color.

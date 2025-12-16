@@ -13,7 +13,7 @@ export const ModuelesActives = {
 }
 
 export const company = {
-  name: "The House Exclusive",
+  name: "Wintronic",
   principalColorTitles: "blue",
   principalColorParrafos: "slate",
   principalColorButtonsBg: "blue",
