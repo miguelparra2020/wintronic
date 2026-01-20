@@ -1,6 +1,163 @@
 ---
+import {
+  MessageCircle,
+  ArrowRight,
+  Cpu,
+  Timer,
+  Boxes,
+  BadgeCheck,
+} from "lucide-react"
 
+import Stat from "@component/global/Componentes/Stat.astro"
 ---
-<div class="min-h-screen bg-gradient-to-br from-gray-50 via-white to-red-50">
-      Wintronic
+
+<section class="hero-root relative flex flex-col text-white overflow-hidden">
+
+  <!-- HERO -->
+  <main class="relative flex flex-col h-full">
+
+    <!-- BACKGROUND LAYERS -->
+    <div class="absolute inset-0 hero-gradient"></div>
+    <div class="absolute inset-0 hero-radial"></div>
+    <div class="absolute inset-0 tech-grid"></div>
+
+    <!-- CONTENT -->
+    <div
+      class="relative z-10 flex flex-col gap-10 px-6 py-4
+             lg:flex-row lg:items-center lg:max-w-7xl lg:mx-auto"
+    >
+
+      <!-- LEFT -->
+      <div class="flex flex-col gap-4 lg:w-1/2">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full
+                 bg-primary/20 border border-primary/30 w-fit"
+        >
+          <span class="size-2 rounded-full bg-green-400 animate-pulse"></span>
+          <span class="text-[10px] font-bold uppercase tracking-widest text-blue-200">
+            Industrial Standard 4.0
+          </span>
+        </div>
+
+        <h1 class="text-5xl lg:text-6xl font-bold leading-[1.1] tracking-[-0.03em]">
+          Transformamos
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-300">
+            ideas
+          </span>
+          en piezas 3D
+        </h1>
+
+        <p class="text-blue-100/70 text-lg max-w-md">
+          Diseño personalizado e impresión 3D profesional para prototipos,
+          repuestos y soluciones a medida con precisión micrométrica.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="https://wa.me/XXXXXXXXXX"
+            target="_blank"
+            class="flex items-center justify-center gap-3 rounded-xl h-14 px-8
+                   bg-green-500 text-black font-bold hover:scale-[1.02]
+                   transition shadow-[0_0_20px_rgba(37,211,102,0.3)]"
+          >
+            <MessageCircle class:list="w-5 h-5" />
+            Cotiza por WhatsApp
+          </a>
+
+          <button
+            class="flex items-center justify-center gap-3 rounded-xl h-14 px-8
+                   bg-white/5 border border-white/10 backdrop-blur-sm
+                   hover:bg-white/10 transition-colors"
+          >
+            Ver proyectos
+            <ArrowRight class:list="w-5 h-5" />
+          </button>
+        </div>
       </div>
+
+      <!-- RIGHT -->
+      <div class="lg:w-1/2 relative">
+        <div class="relative w-full aspect-square max-w-[480px] mx-auto">
+          <div
+            class="relative w-full h-full rounded-2xl overflow-hidden
+                   border border-white/10 shadow-2xl"
+          >
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+            <div
+              class="w-full h-full bg-cover bg-center"
+              style="background-image:url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5FjCxFoyhJfOmVDD2jG_lmGyxyRqSskYA2fxfJ3dou41SG6OGWOQUbbrxBCZYBqFAryH8riBjzJXZjfClvPKzGBn-alYxrW5n28xArL4izpYKSCp-J2-D4yeJ52RF7M0CEfALkT82VW-Yz_y0wRphNKZ78XCaAzfGN3Lig5LFzIvlMywHyd2cDnRDIzeBTiK0aa13kLzhLBxTiy1zl_B6G7euUjbSOtlCqD5gQJ5h3c40IBvngszW3v54XesOjDyYO7N-cQtzmrQ3')"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <div class="relative z-10 mt-auto px-6 pb-10 pt-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:max-w-7xl lg:mx-auto">
+        <Stat icon={Cpu} title="Tecnología" value="FDM / SLA / SLS" />
+        <Stat icon={Timer} title="Entrega" value="48h Express" />
+        <Stat icon={Boxes} title="Diseño" value="CAD / Prototipado" />
+        <Stat icon={BadgeCheck} title="Garantía" value="Certificación ISO" />
+      </div>
+    </div>
+
+  </main>
+</section>
+
+<style>
+/* NAVBAR HEIGHT */
+:root {
+  --nav-h: 10vh;
+}
+
+/* 🔴 MOBILE: SIN RESTRICCIÓN DE ALTURA */
+.hero-root {
+  min-height: auto;
+}
+
+/* 🟢 DESKTOP / TABLET */
+@media (min-width: 1024px) {
+  .hero-root {
+    height: calc(100vh - var(--nav-h));
+  }
+
+  @supports (height: 100dvh) {
+    .hero-root {
+      height: calc(100dvh - var(--nav-h));
+    }
+  }
+}
+
+/* BACKGROUNDS */
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    #050a14 0%,
+    #0b1220 45%,
+    #000000 100%
+  );
+}
+
+.hero-radial {
+  background:
+    radial-gradient(
+      800px circle at 20% 30%,
+      rgba(56, 189, 248, 0.15),
+      transparent 40%
+    ),
+    radial-gradient(
+      600px circle at 80% 70%,
+      rgba(99, 102, 241, 0.12),
+      transparent 45%
+    );
+}
+
+.tech-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.15;
+}
+</style>
