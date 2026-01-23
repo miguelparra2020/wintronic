@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3b146b",
+                        "engineering-blue": "#2D4E8E",
+                        "tech-blue": "#A7C0DC",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#181220",
+                        "wintronic-navy": "#363D82",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .dashed-line {
+            background-image: linear-gradient(to bottom, #2D4E8E 50%, rgba(255, 255, 255, 0) 0%);
+            background-position: left;
+            background-size: 2px 12px;
+            background-repeat: repeat-y;
+        }
+        .gradient-bg {
+            background: linear-gradient(180deg, #363D82 0%, #181220 40%, #000000 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white selection:bg-primary/30">
+<div class="relative flex min-h-screen w-full flex-col gradient-bg overflow-x-hidden pb-24">
+
+<!-- HeadlineText -->
+<div class="px-6 pt-10 pb-2">
+<h1 class="text-white tracking-tight text-[36px] font-bold leading-tight text-left">De la Idea a la Realidad</h1>
+</div>
+<!-- BodyText -->
+<div class="px-6 pb-8">
+<p class="text-tech-blue/80 text-lg font-normal leading-relaxed max-w-[90%]">Conoce nuestro flujo de trabajo técnico para materializar tus proyectos con precisión industrial.</p>
+</div>
+<!-- Timeline Section -->
+<div class="relative px-6">
+<!-- Central connecting dashed line -->
+<div class="absolute left-[43px] top-4 bottom-4 w-[2px] dashed-line opacity-60"></div>
+<div class="space-y-12 relative">
+<!-- Step 1 -->
+<div class="flex items-start gap-6 relative">
+<div class="z-10 flex flex-col items-center">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg shadow-primary/20">1</div>
+</div>
+<div class="flex flex-1 flex-col pt-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-tech-blue" style="font-size: 24px;">lightbulb</span>
+<h3 class="text-white text-xl font-bold leading-tight">Idea &amp; Concepto</h3>
+</div>
+<p class="text-[#aa9fb7] text-base font-normal leading-normal">Conversamos sobre tu visión inicial y requerimientos técnicos específicos.</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-6 relative">
+<div class="z-10 flex flex-col items-center">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg shadow-primary/20">2</div>
+</div>
+<div class="flex flex-1 flex-col pt-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-tech-blue" style="font-size: 24px;">view_in_ar</span>
+<h3 class="text-white text-xl font-bold leading-tight">Diseño 3D / CAD</h3>
+</div>
+<p class="text-[#aa9fb7] text-base font-normal leading-normal">Modelado digital especializado optimizado para manufactura aditiva.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-6 relative">
+<div class="z-10 flex flex-col items-center">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg shadow-primary/20">3</div>
+</div>
+<div class="flex flex-1 flex-col pt-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-tech-blue" style="font-size: 24px;">layers</span>
+<h3 class="text-white text-xl font-bold leading-tight">Selección de Materiales</h3>
+</div>
+<p class="text-[#aa9fb7] text-base font-normal leading-normal">Elegimos el polímero o resina ideal según el esfuerzo mecánico final.</p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-start gap-6 relative">
+<div class="z-10 flex flex-col items-center">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg shadow-primary/20">4</div>
+</div>
+<div class="flex flex-1 flex-col pt-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-tech-blue" style="font-size: 24px;">precision_manufacturing</span>
+<h3 class="text-white text-xl font-bold leading-tight">Impresión de Alta Precisión</h3>
+</div>
+<p class="text-[#aa9fb7] text-base font-normal leading-normal">Tecnología FDM y Resina de última generación para detalles finos.</p>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="flex items-start gap-6 relative">
+<div class="z-10 flex flex-col items-center">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg shadow-primary/20">5</div>
+</div>
+<div class="flex flex-1 flex-col pt-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-tech-blue" style="font-size: 24px;">auto_fix_high</span>
+<h3 class="text-white text-xl font-bold leading-tight">Post-Procesado</h3>
+</div>
+<p class="text-[#aa9fb7] text-base font-normal leading-normal">Limpieza, curado y acabados superficiales de calidad industrial.</p>
+</div>
+</div>
+<!-- Step 6 -->
+<div class="flex items-start gap-6 relative">
+<div class="z-10 flex flex-col items-center">
+<div class="flex size-10 items-center justify-center rounded-full bg-primary text-white font-bold text-xl shadow-lg shadow-primary/20">6</div>
+</div>
+<div class="flex flex-1 flex-col pt-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-tech-blue" style="font-size: 24px;">local_shipping</span>
+<h3 class="text-white text-xl font-bold leading-tight">Entrega Final</h3>
+</div>
+<p class="text-[#aa9fb7] text-base font-normal leading-normal">Control de calidad final y logística segura directo a tus manos.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- ActionPanel (Highlighted Box) -->
+<div class="px-6 mt-12 mb-8">
+<div class="flex flex-col items-start justify-between gap-4 rounded-xl border border-engineering-blue/30 bg-engineering-blue/10 p-6 backdrop-blur-sm">
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">support_agent</span>
+<p class="text-white text-lg font-bold leading-tight">Asesoría Personalizada</p>
+</div>
+<p class="text-[#aa9fb7] text-base font-normal leading-relaxed">¿No sabes por dónde empezar? Nuestros ingenieros te guían sin compromiso en cada fase técnica.</p>
+</div>
+<a class="text-sm font-bold leading-normal tracking-[0.015em] flex items-center gap-2 text-tech-blue group" href="#">
+                    Ver detalles del soporte
+                    <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- WhatsApp Sticky CTA -->
+<div class="fixed bottom-0 left-0 right-0 p-4 bg-black/80 backdrop-blur-lg border-t border-white/10 z-50">
+<button class="w-full h-14 bg-primary rounded-xl flex items-center justify-center gap-3 active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(59,20,107,0.4)]">
+<svg fill="white" height="24"  width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.011 2.25C6.634 2.25 2.25 6.634 2.25 12.011c0 1.722.45 3.393 1.31 4.868L2.25 21.75l4.981-1.31c1.432.784 3.047 1.2 4.78 1.2 5.377 0 9.761-4.384 9.761-9.761 0-5.377-4.384-9.629-9.761-9.629zm0 17.616c-1.545 0-3.04-.413-4.352-1.189l-.312-.186-3.23.85.864-3.153-.205-.326a7.863 7.863 0 01-1.206-4.22c0-4.347 3.535-7.882 7.882-7.882 4.347 0 7.882 3.535 7.882 7.882 0 4.347-3.535 7.882-7.882 7.882zM15.82 13.91c-.208-.104-1.233-.608-1.424-.678-.19-.07-.33-.104-.469.104-.139.208-.538.678-.66.816-.122.139-.243.156-.451.052-.208-.104-.881-.325-1.678-1.033-.62-.553-1.039-1.236-1.161-1.444-.122-.208-.013-.321.091-.424.095-.093.208-.243.312-.365.104-.122.139-.208.208-.347.07-.139.035-.26-.017-.365-.052-.104-.469-1.13-.643-1.547-.17-.41-.343-.353-.469-.36-.122-.007-.26-.007-.399-.007s-.365.052-.555.26c-.191.208-.729.712-.729 1.734 0 1.022.747 2.01 1.033 2.148.208.104 1.47 2.245 3.561 3.147.498.215.886.343 1.189.44.5.158.956.136 1.315.082.4-.06 1.233-.504 1.407-.99.174-.486.174-.903.122-.99-.052-.087-.19-.139-.399-.243z"></path>
+</svg>
+<span class="text-white text-base font-bold">Cuéntanos tu idea por WhatsApp</span>
+</button>
+</div>
+</div>
+</body></html><!-- 
+    Image Alt Text Definitions:
+    No explicit images in this design, primarily using Material Symbols and decorative CSS.
+-->

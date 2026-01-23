@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="dark" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "deep-navy": "#363D82",
+                        "premium-purple": "#3C156D",
+                        "industrial-blue": "#2D4E8E",
+                        "tech-blue": "#A7C0DC",
+                        "dark-card": "#000000",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style type="text/tailwindcss">
+        :root {
+            --deep-navy: #363D82;
+            --premium-purple: #3C156D;
+            --industrial-blue: #2D4E8E;
+            --tech-blue: #A7C0DC;
+        }
+        .technical-grid {
+            background-color: var(--deep-navy);
+            background-image: 
+                linear-gradient(rgba(167, 192, 220, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(167, 192, 220, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+        .case-study-gradient {
+            background: linear-gradient(135deg, #363D82 0%, #3C156D 100%);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-deep-navy font-display antialiased text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden technical-grid">
+
+<header class="px-4 pt-8 pb-4">
+<h1 class="text-white tracking-tight text-[32px] font-bold leading-tight text-left">
+                Proyectos reales, <br/>
+<span class="text-white opacity-90" style="color: #A7C0DC;">resultados precisos</span>
+</h1>
+<p class="text-tech-blue/80 mt-2 text-sm max-w-xs font-medium">Explora nuestra galería de manufactura aditiva y diseños personalizados de alta fidelidad.</p>
+</header>
+<div class="flex gap-3 p-4 overflow-x-auto no-scrollbar">
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-premium-purple px-5 shadow-lg">
+<p class="text-white text-sm font-semibold leading-normal">Industrial</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-industrial-blue border border-tech-blue/40 px-5">
+<p class="text-white text-sm font-medium leading-normal">Comercial</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-industrial-blue border border-tech-blue/40 px-5">
+<p class="text-white text-sm font-medium leading-normal">Personal</p>
+</div>
+</div>
+<div class="px-4 py-2 flex items-center justify-between">
+<h2 class="text-white text-xl font-bold leading-tight tracking-tight">Portafolio Destacado</h2>
+<span class="text-tech-blue text-xs font-bold uppercase tracking-widest bg-white/5 px-2 py-1 rounded">48 Proyectos</span>
+</div>
+<div class="grid grid-cols-2 gap-4 p-4">
+<div class="relative group bg-dark-card flex flex-col gap-3 rounded-xl justify-end p-3 aspect-[4/5] overflow-hidden border border-industrial-blue/50">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.2) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMjp5EdSa4Eu0TxshAnyz1FqpAM4SXWk0erxGPP2h_oWe6r5e-uRz9vbaLZH6YUnfDseTrc5x6cUGHOZoHXpI-Ag5jWapTDy49Ypid3Ls30XL7EEhJT9DrwVlRHGblozGpX8n6y5tqBb7KBrEDPm5DyxvplW2UkuikaeAiTqheR6zCYCDLWQl-e3gcRL81ShwIIaugeltE0050isXe-cBCCoK2UDYCSmWJeGzz7Mbts7Qde-Fw74kZtaVuVjqLDEpS9gZWogCLU041");'></div>
+<div class="relative z-10">
+<span class="bg-premium-purple/90 text-[10px] font-bold px-2 py-0.5 rounded-sm mb-1 inline-block uppercase tracking-wider">Industrial</span>
+<p class="text-white text-sm font-bold leading-tight line-clamp-1">Engranaje Mecánico</p>
+<p class="text-tech-blue text-[10px] mt-0.5 font-medium">Material: ABS Industrial</p>
+</div>
+</div>
+<div class="relative group bg-dark-card flex flex-col gap-3 rounded-xl justify-end p-3 aspect-[4/5] overflow-hidden border border-industrial-blue/50">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.2) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCkC-chAHgqPNnnw-W75pXQK8sloFvDKhBbAyI03XgCvqB2RyDRKOW3h9Uw_ODagx6pJwPbuZCtd53airPrb5wHIOdyFbDH7CrzjRZ-tqS8R1daHgFsdQnqySKJ-Ouf8m4UVgsE16jOa7gw4A9rxngcFfqiHIs-qDwZQG-MOaYiVp8gaSXXmwBkKG6untylhp447L8OekJGqPWclCf4ce0jPrDumyHqCxnlIZ6lkK0ZHtdr1zyHD181ZoB3wsR3peirgEC4sAw_uO6J");'></div>
+<div class="relative z-10">
+<span class="bg-industrial-blue/90 text-[10px] font-bold px-2 py-0.5 rounded-sm mb-1 inline-block uppercase tracking-wider">Comercial</span>
+<p class="text-white text-sm font-bold leading-tight line-clamp-1">Carcasa Custom</p>
+<p class="text-tech-blue text-[10px] mt-0.5 font-medium">Material: Tough Resin</p>
+</div>
+</div>
+<div class="relative group bg-dark-card flex flex-col gap-3 rounded-xl justify-end p-3 aspect-[4/5] overflow-hidden border border-industrial-blue/50">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.2) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAcgShMktfuI0VLwmn0uA9X9mST8Vo9EqRpgADPSnJEY-RokEOWjobu9x_2UwKQvxhIQkqyfc_EXs6LdQ1yx1D5yAfQW2bh8VlIr395LZQpElo0hmH_7i3gMt95QFZOoqctGqwlIIBQh4ksQz6gSzOKCbecVr3fKuUNSgLVDA0qWMu-DB3o7aw0J-y4KKywBgRBssXXeeYAXHaizAT4wKQfTY8r4dNAFKtUj-MdbgHPFJWGImOsh1pLT5Ba-hyX8Z2ntOmVTeSe2AUz");'></div>
+<div class="relative z-10">
+<span class="bg-industrial-blue/90 text-[10px] font-bold px-2 py-0.5 rounded-sm mb-1 inline-block uppercase tracking-wider">Médico</span>
+<p class="text-white text-sm font-bold leading-tight line-clamp-1">Prototipo Médico</p>
+<p class="text-tech-blue text-[10px] mt-0.5 font-medium">Material: Bio-compatible</p>
+</div>
+</div>
+<div class="relative group bg-dark-card flex flex-col gap-3 rounded-xl justify-end p-3 aspect-[4/5] overflow-hidden border border-industrial-blue/50">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.2) 60%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuAIdicetfwmvExw8nWj2dK-mRTdJ9MRp7_FXdDd6I9Towb68HzxiM75oZxReeN1jCGNY9aqV0w2M34DReFgLLz1QfYPUd8XOGGhkT_trDmvSaVBRXPUNVvjQwVI8IGpxif3M47iPKBikH_QhpvrGtQlFWP9YLKQkWB-ppQ4XFRHezHB3mkd_rlilGiaLugRL_o-JSHxS4FrxQb5BIYbUjrNpM0GVta_TJXLv_200g5WJ-HRhBHKjocwQBE2ug8i4mlbw9bZhH5_Kosu");'></div>
+<div class="relative z-10">
+<span class="bg-premium-purple/90 text-[10px] font-bold px-2 py-0.5 rounded-sm mb-1 inline-block uppercase tracking-wider">Industrial</span>
+<p class="text-white text-sm font-bold leading-tight line-clamp-1">Soporte Robótico</p>
+<p class="text-tech-blue text-[10px] mt-0.5 font-medium">Material: Carbon Fiber</p>
+</div>
+</div>
+</div>
+<section class="p-4 mt-4">
+<div class="case-study-gradient rounded-xl p-6 relative overflow-hidden border border-white/10">
+<div class="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-7xl">precision_manufacturing</span>
+</div>
+<h3 class="text-white font-bold text-xs uppercase tracking-[0.2em] mb-5 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">stars</span>
+                    Caso de Éxito: Sector Minero
+                </h3>
+<div class="space-y-6">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="size-2 rounded-full bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.6)]"></span>
+<h4 class="text-xs font-bold text-white uppercase tracking-wider">Problema</h4>
+</div>
+<p class="text-white/80 text-sm leading-relaxed">Pieza de maquinaria descontinuada con tiempo de entrega de 6 meses desde fábrica.</p>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="size-2 rounded-full bg-blue-400 shadow-[0_0_8px_rgba(96,165,250,0.6)]"></span>
+<h4 class="text-xs font-bold text-white uppercase tracking-wider">Solución</h4>
+</div>
+<p class="text-white/80 text-sm leading-relaxed">Escaneo 3D de alta precisión y rediseño optimizado para impresión en Polímero Industrial.</p>
+</div>
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="size-2 rounded-full bg-green-400 shadow-[0_0_8px_rgba(74,222,128,0.6)]"></span>
+<h4 class="text-xs font-bold text-white uppercase tracking-wider">Resultado</h4>
+</div>
+<p class="text-white font-bold text-sm leading-relaxed">Pieza funcional instalada en 48 horas. Reducción de costos del 75%.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4 pt-10 pb-20">
+<div class="text-center">
+<h3 class="text-white text-xl font-bold mb-2">¿Tienes una idea en mente?</h3>
+<p class="text-tech-blue/80 text-sm mb-8 px-4">Cotiza tu proyecto personalizado por WhatsApp y recibe asesoría técnica inmediata.</p>
+<a class="inline-flex w-full items-center justify-center gap-3 bg-premium-purple hover:brightness-110 text-white font-bold py-4 rounded-xl shadow-2xl shadow-black/40 transition-all active:scale-[0.98]" href="#">
+<span class="material-symbols-outlined">chat</span>
+                    Cotiza por WhatsApp
+                </a>
+</div>
+</section>
+<div class="h-6"></div>
+</div>
+
+</body></html>
